@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/xenial64"
-  
+ 
   if ENV.has_key?("http_proxy")
     if Vagrant.has_plugin?("vagrant-proxyconf")
       config.proxy.http = ENV["http_proxy"]
@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 80, host: 8080
-
+  
   config.vm.provider "virtualbox" do |vb|
     # Customize the amount of memory on the VM:
     vb.memory = 3072

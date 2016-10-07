@@ -1,0 +1,3 @@
+*.sh text=auto eol=lf
+config/** text=auto eol=lf
+scripts/** text=auto eol=lf

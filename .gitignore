@@ -1,3 +1,4 @@
+.vagrant/
 *.osm.pbf
 *.tar.xz
 *.log
